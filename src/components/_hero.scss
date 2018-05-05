@@ -1,0 +1,10 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 4rem);
+
+    &__content {
+        margin: auto;
+        width: 117rem;
+    }
+}

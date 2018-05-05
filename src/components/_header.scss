@@ -1,0 +1,9 @@
+.header {
+    background: $black;
+
+    &__topBar {
+        padding: 2rem;
+        background: $energy-yellow;
+        text-align: center;
+    }
+}
