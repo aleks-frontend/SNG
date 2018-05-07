@@ -1,5 +1,39 @@
 html,
 body {
     // setting up nice font size for REM calculations
+    font-family: 'Rubik', sans-serif;
     font-size: 10px;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 1.3em;
+}
+
+h3 {
+    font-size: 3rem;
+    line-height: 1.3em;
+    color: $school-bus-yellow;
+}
+
+p {
+    margin: 2rem 0;
+    font-size: 1.7rem;
+    line-height: 1.35em;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem;
+    max-width: 120rem;
+
+    @include bp(SM) {
+        padding: 5.5rem 6.5rem;
+    }
 }

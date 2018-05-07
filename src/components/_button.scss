@@ -1,7 +1,10 @@
 .btn {
     display: inline-block;
-    padding: 2rem;
+    padding: 0 2rem;
+    font-size: 2rem;
     font-weight: 700;
-    background: $energy-yellow;
+    line-height: 6rem;
+    height: 6rem;
+    background: $school-bus-yellow;
     text-transform: uppercase;
 }

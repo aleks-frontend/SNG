@@ -1,0 +1,37 @@
+.u-txt-center {
+    text-align: center;
+}
+
+// Margin helper classes
+
+.u-mb0 {
+    margin-bottom: 0 !important;
+}
+
+.u-mb1 {
+    margin-bottom: $base-spacing;
+}
+
+.u-mb2 {
+    margin-bottom: $base-spacing * 2;
+}
+
+.u-mb5 {
+    margin-bottom: $base-spacing * 5;
+}
+
+.u-mb10 {
+    margin-bottom: $base-spacing * 10;
+}
+
+.u-mt0 {
+    margin-top: 0 !important;
+}
+
+.u-mt1 {
+    margin-top: $base-spacing;
+}
+
+.u-mt2 {
+    margin-top: $base-spacing * 2;
+}

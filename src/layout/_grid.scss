@@ -1,0 +1,14 @@
+.colGrid {
+    @include bp(SM) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        &--6 {
+            @include bp(SM) {
+                flex-basis: 48%;
+            }
+        }
+    }
+}

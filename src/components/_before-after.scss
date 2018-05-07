@@ -1,0 +1,54 @@
+.beforeAfter {
+    margin: 6rem 0;
+
+    @include bp(SM) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__box {
+        position: relative;
+        margin: 0 0 0.4rem;
+        height: 36.5rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @include bp(SM) {
+            margin: 0;
+            flex-basis: 49.65%;
+            height: 46.5rem;
+        }
+
+        &--before {
+            background-image: url(img/before-bg.jpg);
+        }
+
+        &--after {
+            background-image: url(img/after-bg.jpg);
+        }
+    }
+
+    &__label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0.6rem;
+        font-size: 1.2rem;
+        color: $white;
+        background: $thunder;
+        text-transform: uppercase;
+    }
+
+    &__content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 2rem 3rem;
+        font-size: 1.6rem;
+        line-height: 1.375em;
+        color: $white;
+        background: rgba($thunder, 0.5);
+    }
+}

@@ -3,7 +3,91 @@
 
     &__topBar {
         padding: 2rem;
-        background: $energy-yellow;
+        font-size: 1.8rem;
+        font-weight: 700;
+        background: $school-bus-yellow;
         text-align: center;
+    }
+
+    &__main {
+        position: relative;
+        margin: 0 auto;
+        padding: 2rem 6.5rem;
+        max-width: 120rem;
+        text-align: center;
+    }
+
+    &__logo {
+        display: inline-block;
+        margin: auto;
+        max-width: 50%;
+
+        & > a {
+            display: block;
+
+            & > img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &__nav {
+        display: none;
+        margin: 2rem 0 0;
+
+        @include bp(SM) {
+            display: block;
+            position: absolute;
+            right: 5rem;
+            top: 50%;
+            margin-top: 0;
+            transform: translateY(-50%); 
+        }
+
+        &__item {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: $school-bus-yellow;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+
+    .hamburgerBtn {
+        position: absolute;
+        right: 3rem;
+        top: 50%;
+        width: 4rem;
+        height: 3rem;
+        transform: translateY(-50%);
+
+        &::before {
+            @include button-bar();
+        }
+
+        &::after {
+            @include button-bar(bottom);
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        @include bp(SM) {
+            display: none;
+        }
+
+        &__bar {
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 0.5rem;
+            background: $school-bus-yellow;
+            transform: translateY(-50%);
+        }
     }
 }
