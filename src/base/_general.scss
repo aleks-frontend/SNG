@@ -5,21 +5,16 @@ body {
     font-size: 10px;
 }
 
-h1,
-h2,
-h3 {
-    text-align: center;
-}
-
 h2 {
+    margin: 5rem 0;
     font-size: 3rem;
     line-height: 1.3em;
+    text-transform: uppercase;
 }
 
 h3 {
     font-size: 3rem;
     line-height: 1.3em;
-    color: $school-bus-yellow;
 }
 
 p {
@@ -34,6 +29,6 @@ p {
     max-width: 120rem;
 
     @include bp(SM) {
-        padding: 5.5rem 6.5rem;
+        padding: 6rem 6.5rem;
     }
 }

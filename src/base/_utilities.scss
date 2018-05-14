@@ -16,6 +16,10 @@
     margin-bottom: $base-spacing * 2;
 }
 
+.u-mb4 {
+    margin-bottom: $base-spacing * 4;
+}
+
 .u-mb5 {
     margin-bottom: $base-spacing * 5;
 }
@@ -34,4 +38,47 @@
 
 .u-mt2 {
     margin-top: $base-spacing * 2;
+}
+
+.u-mt3 {
+    margin-top: $base-spacing * 3;
+}
+
+.u-pt0 {
+    padding-top: 0 !important;
+}
+
+.u-pb0 {
+    padding-bottom: 0 !important;
+}
+
+// Colors and backgrounds
+.u-bg-black {
+    background-color: $black;
+}
+
+.u-bg-yellow {
+    background-color: $school-bus-yellow;
+}
+
+.u-color-yellow {
+    color: $school-bus-yellow;
+}
+
+.u-color-white {
+    color: $white;
+}
+
+// Custom borders
+.u-border-b3 {
+    @include custom-bottom-border();
+}
+
+.u-border-w3 {
+    @include custom-bottom-border(3px, $white);
+}
+
+// Helper class applied to the <body> element used to show the modal popup
+.u-modal-visible {
+    overflow: hidden;
 }

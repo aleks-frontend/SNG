@@ -1,3 +1,5 @@
+// Vendot
+@import 'https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css';
 
 @import 'base/variables';
 @import 'base/palette';
@@ -5,6 +7,7 @@
 @import 'base/mixins';
 @import 'base/general';
 @import 'base/utilities';
+@import 'base/headings';
 
 // Layout
 @import 'layout/grid';
@@ -14,3 +17,9 @@
 @import 'components/hero';
 @import 'components/button';
 @import 'components/before-after';
+@import 'components/about';
+@import 'components/modal';
+@import 'components/footer';
+
+@import 'sliders/manifest';
+@import 'lists/manifest';

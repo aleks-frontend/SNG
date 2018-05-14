@@ -1,0 +1,21 @@
+.regList {
+    margin: 2rem 0;
+    padding: 0;
+    list-style-position: inside;
+
+    &__item {
+        font-size: 1.7rem;
+        line-height: 1.3em;
+    }
+
+    &--customBullet {
+        list-style-type: none;
+
+        & > .regList__item {
+            position: relative;
+            padding-left: 1rem;
+
+            @include custom-bullet();
+        }
+    }
+}

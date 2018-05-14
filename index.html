@@ -12,9 +12,23 @@
 </head>
 
 <body>
+  <div class="modal__container" data-modal="estimate">
+    <span class="modal__closeBtn"></span>
+    <div class="modal">
+      <h2 class="heading u-txt-center u-color-yellow u-mb0">FOR A FAST AND<br />
+FREE ESTIMATE</h2>
+      <h3 class="subHeading"><a href="#" class="u-border-w3">SMS</a> or <a href="mailto:info@vistatreecare.com.au" class="u-border-w3">email</a><br />with photos of your stump</h3>
+       <p class="u-mb0">Please include:</p>
+        <ul class="regList u-mb0 u-mt0">
+          <li class="regList__item">Close up photo with tape measure or something to give it scale.</li>
+          <li class="regList__item">A shot from further back so I can see access.</li>
+          <li class="regList__item">If access is difficult, please show some details.</li>
+      </ul>
+    </div><!-- end modal -->
+  </div><!-- end modal__container -->
   <header class="header">
     <div class="header__topBar">
-      STUMP GRINDING IN NORTHERN NSW AND SOUTH EAST QLD • 0427 696 969
+      <span>STUMP GRINDING IN NORTHERN NSW AND SOUTH EAST QLD • <a href="tel:0427-696-969">0427-696-969</a></span>
     </div><!-- end header__topBar -->
     <div class="header__main">
       <h1 class="header__logo">
@@ -26,7 +40,7 @@
         <span class="hamburgerBtn__bar"></span>
       </div><!-- end hamburgerBtn -->
       <nav class="header__nav">
-        <a href="#" class="header__nav__item">About</a>
+        <a href="about.html" class="header__nav__item">About</a>
       </nav>
     </div><!-- end header__main -->
   </header>
@@ -38,13 +52,13 @@
           <span>estimate of your</span>
           <span>stump removal job</span>
         </div><!-- end hero__text -->
-        <a class="btn">Get free estimate</a>
+        <a href="#" class="btn js-modal-trigger" data-modal="estimate">Get free estimate</a>
       </div><!-- end hero__content -->
     </div><!-- end hero -->
     <section>
       <div class="container">
-        <h2>STUMP GRINDING IS THE COST-EFFECTIVE WAY TO REMOVE ANY STUMP, WITH MINIMAL DISTURBANCE TO LAWN AND PROPERTY.</h2>
-        <h3>What you can expect of Stump n Grind</h3>
+        <h2 class="heading u-txt-center u-mt2">STUMP GRINDING IS THE COST-EFFECTIVE WAY TO REMOVE ANY STUMP, WITH MINIMAL DISTURBANCE TO LAWN AND PROPERTY.</h2>
+        <h3 class="subHeading subHeading--large u-txt-center u-color-yellow">What you can expect of Stump n Grind</h3>
         <div class="colGrid">
           <div class="colGrid__item colGrid__item--6">
             <p><strong>Experience</strong> - With 18 years in the tree industry, your job is guaranteed to be done professionally.</p>
@@ -74,9 +88,101 @@
         </div><!-- end beforeAfter -->
       </div><!-- end container -->
     </section>
+    <section class="u-bg-black">
+      <div class="container u-txt-center">
+        <h2 class="u-color-yellow u-mt2">Based in Mullumbimby and servicing:</h2>
+        <div class="colGrid u-mb4">
+          <div class="colGrid__item colGrid__item--6">
+            <ul class="regColList">
+              <li class="regColList__item">Byron Bay</li>
+              <li class="regColList__item">Ballina</li>
+              <li class="regColList__item">Bangalow</li>
+              <li class="regColList__item">Alstonville</li>
+              <li class="regColList__item">Brunswick Heads</li>
+              <li class="regColList__item">Lismore</li>
+              <li class="regColList__item">Ocean Shores</li>
+              <li class="regColList__item">Pottsville</li>
+            </ul><!-- end regColList -->
+          </div><!-- end colGrid__item -->
+          <div class="colGrid__item colGrid__item--6">
+            <ul class="regColList">
+              <li class="regColList__item">Cabarita</li>
+              <li class="regColList__item">Tweed Heads</li>
+              <li class="regColList__item">Hastings Point</li>
+              <li class="regColList__item">Coolangatta</li>
+              <li class="regColList__item">Kingscliff</li>
+              <li class="regColList__item">Currumbin</li>
+              <li class="regColList__item">Murwillumbah</li>
+              <li class="regColList__item">Burleigh Headse</li>
+            </ul><!-- end regColList -->
+          </div><!-- end colGrid__item -->
+        </div><!-- end colGrid -->
+        <p class="u-color-white">...and everywhere in between</p>
+      </div><!-- end container -->
+    </section>
+    <section class="u-bg-yellow">
+      <div class="container u-txt-center">
+        <h2 class="u-mb0 u-mt0">For a fast and free estimate</h2>
+        <h3 class="subHeading subHeading--small u-mt1"><a href="sms:0427-696-969" class="u-border-b3">SMS</a>  or <a href="mailto:info@vistatreecare.com.au" class="u-border-b3">email</a> with photos of your stump</h3>
+        <p class="u-mb0">Please include:</p>
+        <ul class="regList u-mb0 u-mt0">
+          <li class="regList__item">Close up photo with tape measure or something to give it scale.</li>
+          <li class="regList__item">A shot from further back so I can see access.</li>
+          <li class="regList__item">If access is difficult, please show some details.</li>
+        </ul>
+      </div><!-- end container -->
+    </section>
+    <ul class="photoSlider u-mt0">
+      <li><img src="images/slider-image1.jpg" alt="Slide Image 1" /></li>
+      <li><img src="images/slider-image2.jpg" alt="Slide Image 1" /></li>
+      <li><img src="images/slider-image3.jpg" alt="Slide Image 1" /></li>
+      <li><img src="images/slider-image4.jpg" alt="Slide Image 1" /></li> 
+      <li><img src="images/slider-image1.jpg" alt="Slide Image 1" /></li>
+      <li><img src="images/slider-image2.jpg" alt="Slide Image 1" /></li>
+      <li><img src="images/slider-image3.jpg" alt="Slide Image 1" /></li>
+      <li><img src="images/slider-image4.jpg" alt="Slide Image 1" /></li>
+      <li><img src="images/slider-image1.jpg" alt="Slide Image 1" /></li>
+      <li><img src="images/slider-image2.jpg" alt="Slide Image 1" /></li>
+      <li><img src="images/slider-image3.jpg" alt="Slide Image 1" /></li>
+      <li><img src="images/slider-image4.jpg" alt="Slide Image 1" /></li>
+    </ul><!-- end photoSlider -->
+    <section>
+      <div class="container">
+        <div class="about">
+          <div class="about__image">
+            <img src="images/jake.png" alt="Jake" />
+          </div><!-- end about__image -->
+          <div class="about__content">
+            <h2 class="heading u-txt-center heading--small u-mt2 u-mb2">About Jake and Stump N Grind</h2>
+            <p>
+              I have been doing stump removal for over 8 years, and tree work for over 18 years, providing quality tree service for over 2000 clients!
+            </p>
+            <p>
+              In this time I’ve very rarely used paid advertising — I have a reputation for offering an exceptional service, at competitive rates.
+            </p>
+            <p>
+              In addition to private home clients, I also remove stumps for many of the local tree services, local Councils and National Parks.
+            </p>
+            <p class="u-mb0">As well as stump grinding, I can also provide:</p>
+            <ul class="regList regList--customBullet u-mt0">
+              <li class="regList__item">Tree Trimming</li>
+              <li class="regList__item">Tree Removal</li>
+            </ul><!-- end regList -->
+          </div><!-- end about__content -->
+        </div><!-- end about -->
+      </div><!-- end container -->
+    </section>
+    <footer class="footer">
+      <a href="#" class="footer__logo"></a>
+      <ul class="footer__links">
+        <li><a href="tel:0427-696-969">0427 696 969</a></li>
+        <li><a href="mailto:info@vistatreecare.com.au">info@vistatreecare.com.au</a></li>
+      </ul>
+    </footer>
   </main>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 </body>

@@ -1,0 +1,19 @@
+.regColList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+
+    &__item {
+        position: relative;
+        margin-bottom: 1.5rem;
+        padding-left: 2rem;
+        flex-basis: 50%;
+        font-size: 1.6rem;
+        color: $white;
+
+        @include custom-bullet();
+    }
+}

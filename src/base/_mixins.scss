@@ -41,3 +41,35 @@
         bottom: 0;
     }
 }
+
+// Adding the list custom bullet as pseudo element
+@mixin custom-bullet() {
+    &::before {
+        content: '•';
+        position: absolute;
+        left: 0;
+    }
+}
+
+// Transition
+@mixin transition($property: all, $duration: .3s) {
+    transition: $property $duration;
+}
+
+// Custom bottom border
+@mixin custom-bottom-border($weight: .3rem, $color: $black) {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: $weight;
+        background: $color;
+    }
+}
+

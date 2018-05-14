@@ -1,0 +1,61 @@
+.modal {
+    margin: auto;
+    width: 45rem;
+    max-width: 90%;
+    color: $white;
+    text-align: center;
+
+    &__container {
+        display: flex;
+        position: fixed;
+        overflow: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0,0,0, .9);
+        opacity: 0;
+        transition: all .3s;
+        z-index: -1;
+
+        &--visible {
+            opacity: 1;
+            z-index: 9999;
+        }
+    }
+
+    &__closeBtn {
+        position: absolute;
+        display: block;
+        top: 2rem;
+        right: 2rem;
+        width: 3rem;
+        height: 3rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            height: 0.1rem;
+            background: $school-bus-yellow;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            height: 0.1rem;
+            background: $school-bus-yellow;
+            transform: rotate(-45deg);
+        }
+    }
+}

@@ -1,10 +1,27 @@
 .btn {
     display: inline-block;
     padding: 0 2rem;
+    height: 6rem;
     font-size: 2rem;
     font-weight: 700;
     line-height: 6rem;
-    height: 6rem;
+    color: $black;
     background: $school-bus-yellow;
+    text-decoration: none;
     text-transform: uppercase;
+    transition: all .3s;
+
+    &:hover {
+        color: $school-bus-yellow;
+        background: $black;
+    }
+
+    &--alt {
+        background: $white;
+
+        &:hover {
+            color: $school-bus-yellow;
+            background: $black;
+        }
+    }
 }
